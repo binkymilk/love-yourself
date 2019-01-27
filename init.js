@@ -1,3 +1,9 @@
+document.body.onkeyup = function(e){
+  if(e.keyCode === 32 ||  e.key === ' ' || e.keyCode == 13){
+      randomize()
+  }
+}
+
 function randomize () {
   if (lyrics) {
     var num = Math.floor(Math.random() * lyrics.length)
