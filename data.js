@@ -98,7 +98,7 @@ var lyrics = [
     soundcloud: ''
   },
   {
-    lyric: 'The morning will come again. No darkness, no season is lasts forever.',
+    lyric: 'The morning will come again. No darkness, no season lasts forever.',
     song: '봄날 [Spring Day]',
     spotify: 'https://open.spotify.com/track/0WNGsQ1oAuHzNTk8jivBKW?si=WEet3h8rSSy4Ak46CNatgA',
     youtube: '',
@@ -175,7 +175,7 @@ var lyrics = [
     soundcloud: ''
   },
   {
-    lyric: 'Until then I’ll combat the pains and scars until I learn to embrace the concept of bending without breaking/',
+    lyric: 'Until then I’ll combat the pains and scars until I learn to embrace the concept of bending without breaking.',
     song: 'Path',
     spotify: '',
     youtube: 'https://www.youtube.com/watch?v=DelZGaPxFOg',
