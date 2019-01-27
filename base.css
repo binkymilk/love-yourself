@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  padding-left: 5rem;
+  height: 10%;
+}
+
+.header p {
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #ffc2b2, #f7abc8, #cac0e1, #95caed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  display: flex;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10rem;
+}
+
+#lyric {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+#song {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.link {
+  align-self: flex-end;
+}
+
+.link a {
+  color: black;
+  text-decoration: none;
+}
+
+.link a:hover {
+  transition: 0.2s;
+  color: #1db954;
+}

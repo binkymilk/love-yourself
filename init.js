@@ -14,9 +14,9 @@ var lyrics = [
 function randomize () {
   var num = Math.floor(Math.random() * lyrics.length)
 
-  console.log(lyrics[num].lyric)
   document.getElementById('lyric').innerHTML = lyrics[num].lyric
-  document.getElementById('song').innerHTML = lyrics[num].song
+  var song = '— ' + lyrics[num].song
+  document.getElementById('song').innerHTML = song
   document.getElementById('spotify').href = lyrics[num].link
 
 }
