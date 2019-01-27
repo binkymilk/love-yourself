@@ -50,7 +50,17 @@ body {
   text-decoration: none;
 }
 
-.link a:hover {
+.link a i.fa-spotify:hover {
   transition: 0.2s;
   color: #1db954;
+}
+
+.link a i.fa-youtube:hover {
+  transition: 0.2s;
+  color: #CC181E;
+}
+
+.link a i.fa-soundcloud:hover {
+  transition: 0.2s;
+  color: #ff8800;
 }
