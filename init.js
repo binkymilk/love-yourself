@@ -11,6 +11,7 @@ Papa.parse(csv, {
   download: true,
   delimiter: ',',
   header: true,
+  encoding: 'utf-8',
   complete: function (results) {
     lyrics = results.data
     randomize()
