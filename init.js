@@ -4,6 +4,19 @@ document.body.onkeyup = function(e){
   }
 }
 
+// Papa-parse
+var lyrics = []
+var csv = 'https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/e/2PACX-1vR-Xm9DX9AKNIb48DuyZFU1bE5S-AKm8BgMeOeCSBNmKQrwJTSrq4kEYYm_gGPZqGZHx3tvArLXg8VE/pub?gid=0&single=true&output=csv'
+Papa.parse(csv, {
+  download: true,
+  delimiter: ',',
+  header: true,
+  complete: function (results) {
+    lyrics = results.data
+    randomize()
+  }
+})
+
 function randomize () {
   if (lyrics) {
     var num = Math.floor(Math.random() * lyrics.length)
