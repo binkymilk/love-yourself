@@ -30,10 +30,12 @@ function randomize () {
     if (lyrics[num].spotify) {
       link = lyrics[num].spotify
       html = html + '<i class="fab fa-spotify"></i>'
-    } else if (lyrics[num].youtube) {
+    }
+    if (lyrics[num].youtube) {
       link = lyrics[num].youtube
       html = html + '<i class="fab fa-youtube"></i>'
-    } else if (lyrics[num].soundcloud) {
+    }
+    if (lyrics[num].soundcloud) {
       link = lyrics[num].soundcloud
       html = html + '<i class="fab fa-soundcloud"></i>'
     }
