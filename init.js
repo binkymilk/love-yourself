@@ -26,18 +26,18 @@ function randomize () {
     var song = '— ' + lyrics[num].song
     document.getElementById('song').innerHTML = song
     var link = ''
-    var html = 'Play on &nbsp;'
+    var html = 'Play on '
     if (lyrics[num].spotify) {
       link = lyrics[num].spotify
-      html = html + '<i class="fab fa-spotify"></i>'
+      html = html + '&nbsp;<i class="fab fa-spotify"></i>'
     }
     if (lyrics[num].youtube) {
       link = lyrics[num].youtube
-      html = html + '<i class="fab fa-youtube"></i>'
+      html = html + '&nbsp;<i class="fab fa-youtube"></i>'
     }
     if (lyrics[num].soundcloud) {
       link = lyrics[num].soundcloud
-      html = html + '<i class="fab fa-soundcloud"></i>'
+      html = html + '&nbsp;<i class="fab fa-soundcloud"></i>'
     }
     document.getElementById('link').href = link
     document.getElementById('link').innerHTML = html
