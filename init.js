@@ -1,11 +1,11 @@
-document.body.onkeyup = function(e){
-  if(e.keyCode === 32 ||  e.key === ' ' || e.keyCode == 13){
-      randomize()
+document.body.onkeyup = function (e) {
+  if (e.keyCode === 32 || e.key === ' ' || e.keyCode == 13) {
+    randomize()
   }
 }
 
 // Papa-parse
-var lyrics = [{lyric: '', song: '', spotify: '', youtube: '', soundcloud: ''}]
+var lyrics = [{ lyric: '', song: '', spotify: '', youtube: '', soundcloud: '' }]
 var csv = 'https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/e/2PACX-1vR-Xm9DX9AKNIb48DuyZFU1bE5S-AKm8BgMeOeCSBNmKQrwJTSrq4kEYYm_gGPZqGZHx3tvArLXg8VE/pub?gid=0&single=true&output=csv'
 Papa.parse(csv, {
   download: true,
